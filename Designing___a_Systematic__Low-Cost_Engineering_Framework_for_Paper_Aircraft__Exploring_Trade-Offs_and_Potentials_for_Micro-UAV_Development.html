@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>গবেষণার সারসংক্ষেপ | Nabo Kumar</title>
+
+    <link rel="icon" href="img/n5.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <style>
+         :root {
+            --bg-light: #f9f6f0;
+            --bg-secondary: #ebe3d5;
+            --text-main: #3e2723;
+            --text-muted: #6d4c41;
+            --accent-color: #8d6e63;
+            --border-color: #d7ccc8;
+            --font-heading: "Lora", serif;
+            --font-body: "Poppins", sans-serif;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 1.8;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .nav-minimal {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        
+        .back-link {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .research-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .research-header h1 {
+            font-family: var(--font-heading);
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+        
+        .authors {
+            color: var(--accent-color);
+            font-weight: 500;
+            font-style: italic;
+        }
+        
+        .abstract-box {
+            background: var(--bg-secondary);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .abstract-box::before {
+            content: "Abstract";
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            background: var(--accent-color);
+            color: #fff;
+            padding: 2px 12px;
+            border-radius: 10px;
+            font-size: 0.8rem;
+        }
+        
+        .section {
+            margin-bottom: 35px;
+        }
+        
+        .section h2 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+            color: var(--text-main);
+        }
+        
+        .citation {
+            border: 1px dashed var(--border-color);
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 0.85rem;
+            background: #fff;
+        }
+        
+        .download-bar {
+            position: sticky;
+            bottom: 20px;
+            background: var(--text-main);
+            color: #fff;
+            padding: 15px 25px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .download-bar a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        @media (max-width: 600px) {
+            .research-header h1 {
+                font-size: 1.6rem;
+            }
+            .download-bar {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+                border-radius: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="nav-minimal">
+            <a href="index.html" class="back-link"><i class="ph ph-caret-left"></i>Back to Home</a
+        >
+        <span>Research Paper</span>
+      </nav>
+
+      <header class="research-header">
+        <h1>
+          Designing a Systematic, Low-Cost Engineering Framework for Paper
+          Aircraft: Exploring Trade-Offs and Potentials for Micro-UAV
+          Development
+           </h1>
+        <p class="authors">Nabo Kumar, and Research Team</p>
+      </header>
+
+      <div class="abstract-box">
+        <p>
+          This research develops and validates a systematic, low-cost
+          engineering framework for optimizing paper aircraft through computer
+          vision flight tracking and iterative design methodology, with
+          demonstrated transferability to microUAV development applications.
+          Traditional paper aircraft design relies on inefficient
+          trial-and-error approaches that limit aerodynamic understanding and
+          provide no systematic pathway to micro-UAV engineering skills. By
+          implementing the Lucidraft software for automated trajectory tracking,
+          quantitative performance measurement, and enforced single-variable
+          modification protocols across multiple aircraft iterations(a complete
+          cycle of design modification, testing, and analysis), this framework
+          transforms subjective flight assessment into reproducible engineering
+          data. Systematic validation theoretically demonstrates the framework's
+          effectiveness through clear causeand-effect documentation, measurable
+          performance improvements over unstructured approaches, and successful
+          knowledge transfer between design iterations. The organized
+          methodology develops transferable engineering competencies in
+          iterative optimization, trade-off analysis, and systematic testing
+          protocols, providing foundational transferable skills to micro-UAV
+          development within defined scalability boundaries. Framework
+          implementation maintains cost-effectiveness through standard materials
+          (paper, tape, measuring tools) and basic computing requirements,
+          ensuring broad accessibility while delivering professional-level
+          documentation and analysis capabilities that bridge educational
+          engagement with practical aerospace engineering skill development.
+          Further validation of this framework through extended user testing
+          remains as future research work.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Researcher Team Members:</h2>
+        <p>Samiul Muztaba</p>
+        <p>Nabo Kumar Sarkar</p>
+        <p>Ashfaque Ahmed Saud</p>
+        <p>Lam Ayat Sakib</p>
+      </div>
+
+      <div class="section">
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi sunt quam tenetur modi dolor sed nam perferendis numquam, ipsa nostrum impedit ullam corporis ipsam amet, natus est obcaecati. Provident eius dicta velit repellendus, exercitationem ullam repudiandae a sit blanditiis aspernatur!</Eum></p>
+        </div>
+
+      <div class="section">
+        <h2>Citation</h2>
+        <div class="citation">
+          Kumar, N. (2024). "Psychological Impact of Color Themes in Web
+          Design." International Journal of Digital Research, Vol 12, Issue 4.
+        </div>
+      </div>
+
+      <div class="download-bar">
+        <span>পিডিএফ ভার্সন এখন ডাউনলোডের জন্য উপলব্ধ</span>
+        <a href="#"><i class="ph ph-download-simple"></i> Download PDF</a>
+    </div>
+    </div>
+</body>
+
+</html>
