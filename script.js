@@ -60,7 +60,7 @@ window.addEventListener('scroll', () => {
 });
 
 // Google Sheets Form Submission
-const scriptURL = 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxBI8ogZmO45UCxQ-m5wS_OAPtRC4_Dyh8sDR2e1p2q9TKdf_no120OX7xnKAO4T5hl4g/exec';
 const form = document.forms['contactForm'];
 const statusDiv = document.getElementById('formStatus');
 const submitBtn = document.getElementById('submitBtn');
