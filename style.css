@@ -25,6 +25,7 @@
                      margin: 0;
                      padding: 0;
                      box-sizing: border-box;
+                   
                  }
                  
                  body {
@@ -278,6 +279,7 @@
                  .about-text p {
                      margin-bottom: 20px;
                      color: var(--text-muted);
+                   text-align: justify;
                  }
                  
                  .book-section {
@@ -286,6 +288,7 @@
                      background-color: var(--bg-light);
                      border-radius: 20px;
                      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+                   text-align: justify;
                  }
                  
                  .book-section h3 {
