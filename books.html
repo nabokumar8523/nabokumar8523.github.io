@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Advanced SEO Meta Tags -->
+    <title>My Literary Journey: A Curated Collection of Read Books (Book Reviews) | Nabo Kumar</title>
+    <meta name="description" content="Discover Nabo Kumar’s personal library: A comprehensive list of over 100 non-academic books, in-depth reviews, and valuable life lessons. From Bengali literature to world-famous classics, dive into a world of wisdom and stories.">
+    <meta name="keywords" content=" Book Review Bengali, Nabo Kumar Books, Reading List, Book Recommendations, বই রিভিউ, List of books, Bengali Literature Review, Non-academic Books Collection, Classic Bengali Novels, Personal Library Archive,Learning from Books, Best Bengali Authors>
+    <meta name="author" content="Nabo Kumar">
+    <meta name="robots" content="index, follow">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="icon" href="img/n5.png" type="image/x-icon">
+
+    <style>
+        /* Theme Variables from your style.css */
+        
+         :root {
+            --bg-light: #F9F6F0;
+            --bg-secondary: #EBE3D5;
+            --text-main: #3E2723;
+            --text-muted: #6D4C41;
+            --accent-color: #8D6E63;
+            --accent-hover: #5D4037;
+            --border-color: #D7CCC8;
+            --font-heading: 'Lora', serif;
+            --font-body: 'Poppins', sans-serif;
+            --transition: all 0.3s ease;
+        }
+        /* Base Resets */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: var(--font-heading);
+            color: var(--text-main);
+        }
+        
+        a {
+            text-decoration: none;
+            color: var(--text-main);
+            transition: var(--transition);
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+         ::selection {
+            background-color: var(--accent-color);
+            color: #fff;
+        }
+        /* Layout */
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .section-padding {
+            padding: 100px 0;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 60px;
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* Navigation Minimal */
+        
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(249, 246, 240, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(62, 39, 35, 0.05);
+            padding: 20px 0;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .back-link {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-weight: 500;
+            color: var(--accent-color);
+        }
+        
+        .back-link:hover {
+            color: var(--text-main);
+        }
+        /* Page Intro Section */
+        
+        .page-header {
+            padding-top: 150px;
+            padding-bottom: 50px;
+            text-align: center;
+            background: linear-gradient(to bottom, var(--bg-secondary), var(--bg-light));
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .intro-text {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 800px;
+            margin: 20px auto 0;
+        }
+        /* Book Grid System */
+        
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        /* Book Card Styles */
+        
+        .book-card {
+            background-color: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(62, 39, 35, 0.05);
+            transition: var(--transition);
+            border: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .book-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(62, 39, 35, 0.1);
+        }
+        /* Book Cover Area */
+        
+        .book-cover-area {
+            background-color: var(--bg-secondary);
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 280px;
+            border-bottom: 1px solid var(--border-color);
+            position: relative;
+        }
+        /* Real Image Cover */
+        
+        .real-cover {
+            width: 160px;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 5px 15px 15px 5px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        /* FAKE CSS COVER (When no image is provided) */
+        
+        .fake-cover {
+            width: 100%;
+            height: 230px;
+            background-color: var(--text-main);
+            color: var(--bg-light);
+            border-radius: 4px 15px 15px 4px;
+            padding: 20px 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: inset 6px 0 15px rgba(0, 0, 0, 0.6), /* Spine shadow inside */
+            8px 8px 20px rgba(0, 0, 0, 0.25), /* Drop shadow */
+            -2px 0 5px rgba(0, 0, 0, 0.1);
+            /* Left edge shadow */
+            position: relative;
+            background-image: linear-gradient(110deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 40%);
+        }
+        /* Book Spine Detail */
+        
+        .fake-cover::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 1px 0 2px rgba(0, 0, 0, 0.3);
+        }
+        
+        .fake-title {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            line-height: 1.3;
+            z-index: 1;
+        }
+        
+        .fake-author {
+            font-size: 0.85rem;
+            font-weight: 300;
+            opacity: 0.8;
+            font-style: italic;
+            z-index: 1;
+        }
+        
+        .fake-cover-icon {
+            margin-bottom: 15px;
+            opacity: 0.5;
+            font-size: 1.5rem;
+        }
+        /* Book Info Section */
+        
+        .book-info {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        
+        .book-title {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+            line-height: 1.3;
+        }
+        
+        .book-author-text {
+            color: var(--accent-color);
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .book-desc {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        
+        .book-learnings {
+            background-color: var(--bg-light);
+            padding: 15px;
+            border-left: 3px solid var(--accent-color);
+            font-size: 0.9rem;
+            border-radius: 0 10px 10px 0;
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+        
+        .learnings-title {
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .book-actions {
+            margin-top: auto;
+            border-top: 1px dashed var(--border-color);
+            padding-top: 20px;
+        }
+        
+        .btn-buy {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background-color: var(--bg-secondary);
+            color: var(--text-main);
+            border-radius: 30px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+        
+        .btn-buy:hover {
+            background-color: var(--accent-color);
+            color: #fff;
+        }
+        /* Footer */
+        footer {
+                     background-color: var(--text-main);
+                     color: var(--bg-light);
+                     padding: 60px 0 30px;
+                     text-align: center;
+                 }
+                 
+                 .social-links {
+                     display: flex;
+                     justify-content: center;
+                     gap: 20px;
+                     margin-bottom: 30px;
+                 }
+                 
+                 .social-links a {
+                     color: var(--bg-light);
+                     font-size: 1.8rem;
+                     transition: var(--transition);
+                 }
+                 
+                 .social-links a:hover {
+                     color: var(--accent-color);
+                     transform: translateY(-3px);
+                 }
+        
+		
+        /* Animations */
+        
+        .fade-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        @media (max-width: 600px) {
+            .page-header {
+                padding-top: 120px;
+            }
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Nabo Kumar<strong>.</strong></a>
+            <a href="index.html" class="back-link"><i class="ph ph-caret-left"></i> Back to Home</a>
+        </div>
+    </header>
+
+    <!-- Intro Section -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="section-title fade-up"><i class="ph ph-books"></i> My Literary Journey: A Curated Collection of Read Books</h1>
+            <p class="intro-text fade-up" style="transition-delay: 0.1s;">
+                বই পড়া আমার কাছে শুধু শখ নয়, এটি পৃথিবী দেখার নতুন একটি জানালা। একাডেমিক পড়াশোনার বাইরে আমি এখন পর্যন্ত ১৫০-এর বেশি নন-একাডেমিক বই পড়েছি। সাইকোলজি, দর্শন, ইতিহাস কিংবা সায়েন্স ফিকশন—বইয়ের পাতার এই জার্নিগুলোর কিছুটা অভিজ্ঞতা এখানে শেয়ার করার চেষ্টা করেছি।
+                কিছু বইয়ের রিভিউ, কিছু বই থেকে পাওয়া স্পেশাল লেসন এখানে লিপিবদ্ধ করা হলো।
+            </p>
+        </div>
+    </section>
+
+    <!-- Books Grid Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="books-grid" id="booksContainer">
+                <!-- Books will be injected here via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+	
+	<!-- Footer & Social Media -->
+    <footer>
+        <div class="container">
+            <h2 style="color: var(--bg-light); margin-bottom: 20px;">Nabo Kumar</h2>
+            <div class="social-links">
+                <a href="https://github.com/nabokumar8523/" target="_blank" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+            </div>
+
+            <p style="color: var(--border-color); font-size: 0.9rem;">
+                &copy; <span id="year"></span> Nabo Kumar. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Data and Logic -->
+    <script>
+        // Set Current Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // ==========================================
+        // BOOK DATABASE (এখানে আপনার বইয়ের তথ্যগুলো দিন)
+        // ==========================================
+        /*
+          গাইডলাইন:
+          - image: যদি বইয়ের কভার ইমেজ থাকে তাহলে লিংক দিন (যেমন: "img/book1.jpg")। না থাকলে ফাঁকা ("") রাখুন।
+          - description: বইয়ের বিবরণ (অপশনাল, না দিতে চাইলে ফাঁকা রাখুন)।
+          - learnings: আপনি কি শিখেছেন (অপশনাল, না দিতে চাইলে ফাঁকা রাখুন)।
+          - buyLink: কেনার লিংক (অপশনাল, না দিতে চাইলে ফাঁকা রাখুন)।
+        */
+        const booksData = [{
+            id: 0,
+            title: "",
+            author: "",
+            image: "",
+            description: "",
+            learnings: "",
+            buyLink: ""
+        }, 
+        {
+    "id": 1,
+    "title": "Radharani",
+    "author": "Bankimchandra Chattopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 2,
+    "title": "Arakshaniya",
+    "author": "Sarat Chandra Chattopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 3,
+    "title": "Heshoram Husiyarer Diary",
+    "author": "Sukumar Ray",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 4,
+    "title": "Goyenda Krishna O Gupto Ghatak",
+    "author": "Prabhabati Debi Saraswati",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 5,
+    "title": "The Time Machine (World)",
+    "author": "H.G. Wells",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 6,
+    "title": "Gulliver's Travels (World)",
+    "author": "Jonathan Swift",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 7,
+    "title": "Toilochitrer Bhoot",
+    "author": "Manik Bandyopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 8,
+    "title": "The Merchant of Venice (World)",
+    "author": "William Shakespeare",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 9,
+    "title": "The Overcoat _ (World)",
+    "author": "Nikolai Gogol",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 10,
+    "title": "Potirik Bhita",
+    "author": "Bibhutibhusan Bandyopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 11,
+    "title": "Meghamallar",
+    "author": "Bibhutibhusan Bandyopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 12,
+    "title": "Chander Pahar",
+    "author": "Bibhutibhusan Bandyopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 13,
+    "title": "Baksha Badal",
+    "author": "Bibhutibhusan Bandyopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 14,
+    "title": "Peyala",
+    "author": "Bibhutibhusan Bandyopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 15,
+    "title": "Einstein O Indubala",
+    "author": "Bibhutibhusan Bandyopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 16,
+    "title": "Mismider Kabach",
+    "author": "Bibhutibhusan Bandyopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 17,
+    "title": "Adarsha Hindu Hotel",
+    "author": "Bibhutibhushan Bandopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 18,
+    "title": "Pather Panchali",
+    "author": "Bibhutibhushan Bandopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 19,
+    "title": "Jok-er Dhon",
+    "author": "Hemendra Kumar Ray",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 20,
+    "title": "Abar Jok-er Dhon",
+    "author": "Hemendra Kumar Ray",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 21,
+    "title": "Mrs. Kumudini Chowdhury",
+    "author": "Hemendra Kumar Ray",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 22,
+    "title": "Netajir Chhoy Murti",
+    "author": "Hemendra Kumar Ray",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 23,
+    "title": "Rahasyer Aalo Chhaya",
+    "author": "Hemendra Kumar Ray",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 24,
+    "title": "Jayanta-Manik Adventure: Padmaraag Buddha",
+    "author": "Hemendra Kumar Ray",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 25,
+    "title": "Sonar Anaras",
+    "author": "Hemendra Kumar Ray",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 26,
+    "title": "Amrito-dweep",
+    "author": "Hemendra Kumar Ray",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 27,
+    "title": "Aadh Khawa Mawra",
+    "author": "Hemendra Kumar Ray",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 28,
+    "title": "Bandi Atmar Kahini",
+    "author": "Hemendra Kumar Ray",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 29,
+    "title": "Jhau Bungalow-r Rahasya",
+    "author": "Narayan Gangopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 30,
+    "title": "Buddhir Baire",
+    "author": "Narayan Gangopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 31,
+    "title": "Tenida: Dadhichi, Poka o Biswakarma",
+    "author": "Narayan Gangopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 32,
+    "title": "Tenida: Kombol Niruddesh",
+    "author": "Narayan Gangopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 33,
+    "title": "Tenida: Ekti Football Match",
+    "author": "Narayan Gangopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 34,
+    "title": "Typewriter(Bhuture)",
+    "author": "Narayan Gangopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 35,
+    "title": "Chirokumar Sabha",
+    "author": "Rabindranath Tagore",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 36,
+    "title": "Megh o Roudro",
+    "author": "Rabindranath Tagore",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 37,
+    "title": "Anodhikar Probesh",
+    "author": "Rabindranath Tagore",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 38,
+    "title": "Dena Paona",
+    "author": "Rabindranath Tagore",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 39,
+    "title": "Joggeshwarer Joggo",
+    "author": "Rabindranath Tagore",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 40,
+    "title": "Badnam",
+    "author": "Rabindranath Tagore",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 41,
+    "title": "Ichchapuran",
+    "author": "Rabindranath Tagore",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 42,
+    "title": "Parikkha && Tandraharan",
+    "author": "Saradindu Bandyopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 43,
+    "title": "Dadar Kirti",
+    "author": "Saradindu Bandyopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 44,
+    "title": "Daibaat",
+    "author": "Saradindu Bandyopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 45,
+    "title": "Pichhu Pichhu Chole",
+    "author": "Saradindu Bandyopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 46,
+    "title": "Bhollu Sardar",
+    "author": "Saradindu Bandyopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 47,
+    "title": "Byomkesh: Loha-r Biscuit",
+    "author": "Saradindu Bandopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 48,
+    "title": "Shankha Kankan",
+    "author": "Saradindu Bandopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 49,
+    "title": "Byomkesh Bakshi: Chiriakhana",
+    "author": "Saradindu Bandopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 50,
+    "title": "Byomkesh Bakshi: Magnomainak",
+    "author": "Saradindu Bandyopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 51,
+    "title": "Sherlock Holmes: The Boscombe Valley Mystery",
+    "author": "Sir Arthur Conan Doyle",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 52,
+    "title": "Sherlock Holmes: The Adventure of the Naval Treaty",
+    "author": "Sir Arthur Conan Doyle",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 53,
+    "title": "Sherlock Holmes: The Adventure of Silver Blaze",
+    "author": "Sir Arthur Conan Doyle",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 54,
+    "title": "Sherlock Holmes: The Adventure of the Cardboard Box",
+    "author": "Sir Arthur Conan Doyle",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 55,
+    "title": "Kakababu: Ulka Rahasya",
+    "author": "Sunil Gangopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 56,
+    "title": "Kakababu: Bijoynagarer Hirey",
+    "author": "Sunil Gangopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 57,
+    "title": "Kakababu: Rajbarir Rahasya",
+    "author": "Sunil Gangopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 58,
+    "title": "Ghatbabu",
+    "author": "Sunil Gangopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 59,
+    "title": "Chhotomamar Byaparta",
+    "author": "Sunil Gangopadhyay",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 60,
+    "title": "Tarini Khuro: Khelowar Tarinikhuro",
+    "author": "Satyajit Ray",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 61,
+    "title": "Professor Shonku o Aadim Manush",
+    "author": "Satyajit Ray",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 62,
+    "title": "Professor Shonku: Shonkur Subarno Sujog",
+    "author": "Satyajit Ray",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 63,
+    "title": "Professor Shonku: Swarnaparnee",
+    "author": "Satyajit Ray",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 64,
+    "title": "Professor Shonku: Eksringo Obhijaan",
+    "author": "Satyajit Ray",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 65,
+    "title": "Professor Shonku: Shonkur Congo Obhijaan",
+    "author": "Satyajit Ray",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 66,
+    "title": "Professor Shonku: Nakurbabu O El Dorado",
+    "author": "Satyajit Ray",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 67,
+    "title": "Professor Shonku o Paralok Charcha",
+    "author": "Satyajit Ray",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 68,
+    "title": "Feluda: Royal Bengal Rahasya",
+    "author": "Satyajit Ray",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 69,
+    "title": "Feluda: London-e Feluda",
+    "author": "Satyajit Ray",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 70,
+    "title": "Feluda: Kailase Kelankari",
+    "author": "Satyajit Ray",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 71,
+    "title": "Feluda: Baksho Rahasya",
+    "author": "Satyajit Ray",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 72,
+    "title": "Feluda: Bosepukure Khoonkharapi",
+    "author": "Satyajit Ray",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 73,
+    "title": "Brazil-er Kaalo Baagh",
+    "author": "Satyajit Ray",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 74,
+    "title": "First Class Kamra",
+    "author": "Satyajit Ray",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 75,
+    "title": "Beeshphool",
+    "author": "Satyajit Ray",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  },
+  {
+    "id": 76,
+    "title": "Gagan Chowdhury-r Studio",
+    "author": "Satyajit Ray",
+    "image": "",
+    "description": "",
+    "learnings": "",
+    "buyLink": ""
+  }];
+
+        // ==========================================
+        // RENDER BOOKS FUNCTION
+        // ==========================================
+        const booksContainer = document.getElementById('booksContainer');
+
+        function renderBooks() {
+            let htmlContent = '';
+
+            booksData.forEach((book, index) => {
+                // ১. Cover Logic: ছবি থাকলে ছবি, না থাকলে CSS Cover
+                let coverHTML = '';
+                if (book.image && book.image.trim() !== "") {
+                    coverHTML = `<img src="${book.image}" alt="${book.title}" class="real-cover">`;
+                } else {
+                    coverHTML = `
+                        <div class="fake-cover">
+                            <i class="ph ph-book-open-text fake-cover-icon"></i>
+                            <div class="fake-title">${book.title}</div>
+                            <div class="fake-author">${book.author}</div>
+                        </div>
+                    `;
+                }
+
+                // ২. Optional Fields Logic
+                let descHTML = book.description ? `<p class="book-desc">${book.description}</p>` : '';
+
+                let learningsHTML = '';
+                if (book.learnings) {
+                    learningsHTML = `
+                        <div class="book-learnings">
+                            <div class="learnings-title"><i class="ph ph-lightbulb"></i> যা শিখেছি</div>
+                            ${book.learnings}
+                        </div>
+                    `;
+                }
+
+                let actionHTML = '';
+                if (book.buyLink) {
+                    actionHTML = `
+                        <div class="book-actions">
+                            <a href="${book.buyLink}" target="_blank" class="btn-buy">
+                                <i class="ph ph-shopping-cart"></i> বইটি সংগ্রহ করুন
+                            </a>
+                        </div>
+                    `;
+                }
+
+                // ৩. Final Card Assembly
+                // Adding slight transition delay for cascade effect on scroll
+                let delay = (index % 3) * 0.1;
+
+                htmlContent += `
+                    <div class="book-card fade-up" style="transition-delay: ${delay}s">
+                        <div class="book-cover-area">
+                            ${coverHTML}
+                        </div>
+                        <div class="book-info">
+                            <h3 class="book-title">${book.title}</h3>
+                            <div class="book-author-text"><i class="ph ph-pen-nib"></i> ${book.author}</div>
+                            ${descHTML}
+                            ${learningsHTML}
+                            ${actionHTML}
+                        </div>
+                    </div>
+                `;
+            });
+
+            booksContainer.innerHTML = htmlContent;
+        }
+
+        // Initialize Render
+        renderBooks();
+
+        // ==========================================
+        // SCROLL ANIMATION (Intersection Observer)
+        // ==========================================
+        const appearOptions = {
+            threshold: 0.15,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+
+        // Delay observing slightly to ensure DOM is fully injected
+        setTimeout(() => {
+            const fadeElements = document.querySelectorAll('.fade-up');
+            fadeElements.forEach(element => {
+                appearOnScroll.observe(element);
+            });
+        }, 100);
+    </script>
+</body>
+
+</html>
